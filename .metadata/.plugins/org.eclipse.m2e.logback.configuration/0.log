@@ -43,3 +43,133 @@
 2020-05-08 20:38:02,478 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
 2020-05-08 20:38:02,480 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-05-08 20:38:02,481 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 20:45:14,572 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-05-08 20:45:17,358 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:45:17,359 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 20:45:17,363 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:45:17,363 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 20:51:05,233 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:51:05,233 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 20:51:05,236 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:51:05,236 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 20:54:53,714 [Worker-20: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\laiOFFER\project\JobRecommendation
+2020-05-08 20:54:53,717 [Worker-20: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-05-08 20:55:01,904 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:55:01,905 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 20:55:01,907 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:55:01,907 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 20:55:43,085 [Worker-18: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\laiOFFER\project\JobRecommendation
+2020-05-08 20:55:43,085 [Worker-18: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-05-08 20:55:47,868 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:55:47,868 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 20:55:47,871 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 20:55:47,871 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:06:19,853 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:19,854 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:06:19,856 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:19,856 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:06:24,868 [Worker-32: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Mars:JobRecommendation:0.0.1-SNAPSHOT @ D:\laiOFFER\project\JobRecommendation\pom.xml.
+2020-05-08 21:06:26,140 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:26,141 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:06:26,143 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:26,144 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:06:26,145 [Worker-32: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of JobRecommendation
+2020-05-08 21:06:26,145 [Worker-32: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for JobRecommendation
+2020-05-08 21:06:26,153 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:26,505 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:26,506 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:06:26,507 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:26,508 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:06:43,626 [Worker-18: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\laiOFFER\project\JobRecommendation
+2020-05-08 21:06:43,627 [Worker-18: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-05-08 21:06:48,423 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:48,423 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:06:48,426 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:06:48,426 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:08:14,284 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:08:14,284 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:08:14,310 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:08:14,310 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:14:22,244 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:14:22,244 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:14:22,245 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:14:22,246 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:21:13,389 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:21:13,390 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:21:13,393 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:21:13,393 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:23:21,265 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:23:21,265 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:23:21,267 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:23:21,268 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:28:49,350 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:28:49,351 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:28:49,352 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:28:49,352 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:28:52,397 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:28:52,398 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:28:52,401 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:28:52,402 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:30:20,880 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:30:20,880 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:30:20,882 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:30:20,882 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-08 21:32:16,039 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:32:16,039 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-08 21:32:16,041 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-08 21:32:16,041 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 14:35:39,705 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-05-11 14:35:46,119 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:35:46,121 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 14:35:46,123 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:35:46,123 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 14:51:50,424 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Mars:JobRecommendation:0.0.1-SNAPSHOT @ D:\laiOFFER\project\JobRecommendation\pom.xml.
+2020-05-11 14:51:54,407 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:51:54,408 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 14:51:54,410 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:51:54,410 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 14:51:54,411 [Worker-22: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of JobRecommendation
+2020-05-11 14:51:54,412 [Worker-22: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for JobRecommendation
+2020-05-11 14:51:54,419 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:51:55,923 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:51:55,924 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 14:51:55,925 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:51:55,925 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 14:52:03,857 [Worker-25: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\laiOFFER\project\JobRecommendation
+2020-05-11 14:52:03,858 [Worker-25: Launching Executing install in D__laiOFFER_project_JobRecommendation] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2020-05-11 14:52:11,272 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:52:11,272 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 14:52:11,274 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:52:11,274 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 14:53:12,801 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:53:12,802 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 14:53:12,803 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 14:53:12,804 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:09:08,219 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:09:08,220 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:09:08,223 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:09:08,224 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:19:26,609 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:19:26,610 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:19:26,611 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:19:26,612 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:26:53,022 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:26:53,023 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:26:53,025 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:26:53,025 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:30:29,599 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:30:29,599 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:30:29,600 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:30:29,601 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:44:12,437 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:44:12,437 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:44:12,438 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:44:12,438 [Worker-47: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 15:57:48,787 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:57:48,787 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 15:57:48,788 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 15:57:48,788 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
+2020-05-11 16:13:21,734 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 16:13:21,734 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\main\resources
+2020-05-11 16:13:21,735 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2020-05-11 16:13:21,735 [Worker-68: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\laiOFFER\project\JobRecommendation\src\test\resources
