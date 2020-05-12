@@ -25,7 +25,7 @@ public class GitHubClient {
 	private static final String URL_TEMPLATE = "https://jobs.github.com/positions.json?descroption=%s&lat=%s&long=%s";
 	private static final String DEFAULT_KEYWORD = "developer";
 	
-	public List<Item> search(double lat, double lon, String keyword) {
+	public JSONArray search(double lat, double lon, String keyword) {
 		if (keyword == null) {
 			keyword = DEFAULT_KEYWORD;
 		}
@@ -42,11 +42,11 @@ public class GitHubClient {
 			//and return a http response
 			CloseableHttpResponse response = httpClient.execute(new HttpGet(url));
 			if (response.getStatusLine().getStatusCode() != 200) {
-				return new ArrayList();
+				return new JSONArray();
 			}
 			HttpEntity entity = response.getEntity();
 			if (entity == null) {
-				return new ArrayList();
+				return new JSONArray();
 			}
 			//getContent return InputStream, the input of constructor of the InputStreamReader is InputStream
 			//InputStreamReader extends Reader
@@ -56,8 +56,7 @@ public class GitHubClient {
 			while((line = reader.readLine()) != null) {
 				responseBody.append(line);
 			}
-			JSONArray array = new JSONArray(responseBody.toString());
-			return getItemList(array);
+			return new JSONArray(responseBody.toString());
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -65,7 +64,7 @@ public class GitHubClient {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return new ArrayList<>();
+		return null;
 	}
 	
 	private List<Item> getItemList(JSONArray array) {
@@ -73,7 +72,7 @@ public class GitHubClient {
 		for (int i = 0; i < array.length(); ++i) {
 			JSONObject object = array.getJSONObject(i);
 			ItemBuilder builder = new ItemBuilder();
-
+			
 			builder.setItemId(getStringFieldOrEmpty(object, "id"));
 			builder.setName(getStringFieldOrEmpty(object, "name"));
 			builder.setAddress(getStringFieldOrEmpty(object, "address"));
@@ -82,7 +81,7 @@ public class GitHubClient {
 			Item item = builder.build();
 			itemList.add(item);
 		}
-
+		
 		return itemList;
 	}
 	

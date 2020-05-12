@@ -1,13 +1,10 @@
 package external;
 
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.ClientProtocolException;
@@ -16,16 +13,12 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.json.JSONArray;
-import org.json.JSONObject;
-
-import entity.Item;
-import entity.Item.ItemBuilder;
 
 public class GitHubClient {
 	private static final String URL_TEMPLATE = "https://jobs.github.com/positions.json?descroption=%s&lat=%s&long=%s";
 	private static final String DEFAULT_KEYWORD = "developer";
 	
-	public List<Item> search(double lat, double lon, String keyword) {
+	public JSONArray search(double lat, double lon, String keyword) {
 		if (keyword == null) {
 			keyword = DEFAULT_KEYWORD;
 		}
@@ -42,11 +35,11 @@ public class GitHubClient {
 			//and return a http response
 			CloseableHttpResponse response = httpClient.execute(new HttpGet(url));
 			if (response.getStatusLine().getStatusCode() != 200) {
-				return new ArrayList();
+				return new JSONArray();
 			}
 			HttpEntity entity = response.getEntity();
 			if (entity == null) {
-				return new ArrayList();
+				return new JSONArray();
 			}
 			//getContent return InputStream, the input of constructor of the InputStreamReader is InputStream
 			//InputStreamReader extends Reader
@@ -56,8 +49,7 @@ public class GitHubClient {
 			while((line = reader.readLine()) != null) {
 				responseBody.append(line);
 			}
-			JSONArray array = new JSONArray(responseBody.toString());
-			return getItemList(array);
+			return new JSONArray(responseBody.toString());
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -65,28 +57,6 @@ public class GitHubClient {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return new ArrayList<>();
-	}
-	
-	private List<Item> getItemList(JSONArray array) {
-		List<Item> itemList = new ArrayList<>();
-		for (int i = 0; i < array.length(); ++i) {
-			JSONObject object = array.getJSONObject(i);
-			ItemBuilder builder = new ItemBuilder();
-
-			builder.setItemId(getStringFieldOrEmpty(object, "id"));
-			builder.setName(getStringFieldOrEmpty(object, "name"));
-			builder.setAddress(getStringFieldOrEmpty(object, "address"));
-			builder.setUrl(getStringFieldOrEmpty(object, "url"));
-			builder.setImageUrl(getStringFieldOrEmpty(object, "company_logo"));
-			Item item = builder.build();
-			itemList.add(item);
-		}
-
-		return itemList;
-	}
-	
-	private String getStringFieldOrEmpty(JSONObject obj, String field) {
-		return obj.isNull(field) ? "" : obj.getString(field);
+		return null;
 	}
 }
