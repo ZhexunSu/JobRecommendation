@@ -21,7 +21,8 @@ import com.monkeylearn.ExtraParam;
 
 public class MonkeyLearnClient {
 	private static final String API_KEY = Password.APIkeyword;// make sure change it to your api key.
-    public static void main(String[] args) {
+    
+	public static void main(String[] args) {
 		
 		String[] textList = {
 				"Elon Musk has shared a photo of the spacesuit designed by SpaceX. This is the second image shared of the new design and the first to feature the spacesuit’s full-body look.", };
