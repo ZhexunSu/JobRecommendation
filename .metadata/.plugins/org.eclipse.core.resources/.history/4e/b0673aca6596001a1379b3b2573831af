@@ -1,0 +1,15 @@
+package password;
+
+public class Password {
+	public static final String APIkeyword = "8f9f430e7858e709ba9333cb202519ba0f6d3839";
+	public static final String ModelID = "ex_YCya9nrn";
+	public static final String INSTANCE = "laiproject-instance.couabeojpkak.us-west-1.rds.amazonaws.com";
+	public static final String PORT_NUM = "3306";
+	public static final String DB_NAME = "laiproject";
+	public static final String USERNAME = "admin";
+	public static final String PASSWORD = "szxll6868";
+	public static final String URL = "jdbc:mysql://"
+			+ INSTANCE + ":" + PORT_NUM + "/" + DB_NAME
+			+ "?user=" + USERNAME + "&password=" + PASSWORD
+			+ "&autoReconnect=true&serverTimezone=UTC";
+}
