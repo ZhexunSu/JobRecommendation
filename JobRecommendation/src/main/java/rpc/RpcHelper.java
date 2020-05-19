@@ -20,14 +20,14 @@ public class RpcHelper {
 		response.setContentType("application/json");
 		response.getWriter().print(array);
 	}
-	
+
 	public static void writeJsonObject(HttpServletResponse response, JSONObject obj) throws IOException {
 		response.setContentType("application/json");
 		response.getWriter().print(obj);
 	}
-	
-	//Parse a JSONObject from HTTP request
-	public static JSONObject readJSONOject(HttpServletRequest request) throws IOException {
+
+	// Parses a JSONObject from http request.
+	public static JSONObject readJSONObject(HttpServletRequest request) throws IOException {
 		BufferedReader reader = new BufferedReader(request.getReader());
 		StringBuilder requestBody = new StringBuilder();
 		String line = null;
@@ -36,8 +36,8 @@ public class RpcHelper {
 		}
 		return new JSONObject(requestBody.toString());
 	}
-	
-	//Convert a JSON object to Item object
+
+	// Convert a JSON object to Item object
 	public static Item parseFavoriteItem(JSONObject favoriteItem) {
 		ItemBuilder builder = new ItemBuilder();
 		builder.setItemId(favoriteItem.getString("item_id"));
@@ -45,7 +45,7 @@ public class RpcHelper {
 		builder.setAddress(favoriteItem.getString("address"));
 		builder.setUrl(favoriteItem.getString("url"));
 		builder.setImageUrl(favoriteItem.getString("image_url"));
-		
+
 		Set<String> keywords = new HashSet<>();
 		JSONArray array = favoriteItem.getJSONArray("keywords");
 		for (int i = 0; i < array.length(); ++i) {

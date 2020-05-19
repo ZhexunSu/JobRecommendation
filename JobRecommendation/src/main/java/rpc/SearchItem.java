@@ -1,7 +1,6 @@
 package rpc;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 import java.util.Set;
 
@@ -36,16 +35,31 @@ public class SearchItem extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		/*
+		double lat = Double.parseDouble(request.getParameter("lat"));
+		double lon = Double.parseDouble(request.getParameter("lon"));
+
+		GitHubClient client = new GitHubClient();
+		List<Item> items = client.search(lat, lon, null);
+		JSONArray array = new JSONArray();
+		for (Item item : items) {
+			array.put(item.toJSONObject());
+		}
+		RpcHelper.writeJsonArray(response, array);
+		*/
+		
+		
 		String userId = request.getParameter("user_id");
 		double lat = Double.parseDouble(request.getParameter("lat"));
 		double lon = Double.parseDouble(request.getParameter("lon"));
-		
+
+		GitHubClient client = new GitHubClient();
+		List<Item> items = client.search(lat, lon, null);
+
 		MySQLConnection connection = new MySQLConnection();
 		Set<String> favoritedItemIds = connection.getFavoriteItemIds(userId);
 		connection.close();
-		
-		GitHubClient client = new GitHubClient();
-		List<Item> items = client.search(lat, lon, null);
+
 		JSONArray array = new JSONArray();
 		for (Item item : items) {
 			JSONObject obj = item.toJSONObject();
@@ -53,6 +67,7 @@ public class SearchItem extends HttpServlet {
 			array.put(obj);
 		}
 		RpcHelper.writeJsonArray(response, array);
+		
 	}
 
 	/**

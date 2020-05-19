@@ -12,7 +12,7 @@ public class Item {
 	private Set<String> keywords;
 	private String imageUrl;
 	private String url;
-	
+
 	private Item(ItemBuilder builder) {
 		this.itemId = builder.itemId;
 		this.name = builder.name;
@@ -21,31 +21,7 @@ public class Item {
 		this.url = builder.url;
 		this.keywords = builder.keywords;
 	}
-
-	public String getItemId() {
-		return itemId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public Set<String> getKeywords() {
-		return keywords;
-	}
-
-	public String getImageUrl() {
-		return imageUrl;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
+	
 	public static class ItemBuilder {
 		private String itemId;
 		private String name;
@@ -53,7 +29,8 @@ public class Item {
 		private Set<String> keywords;
 		private String imageUrl;
 		private String url;
-
+		
+		
 		public void setItemId(String itemId) {
 			this.itemId = itemId;
 		}
@@ -82,13 +59,37 @@ public class Item {
 			return new Item(this);
 		}
 	}
+	
+	public String getItemId() {
+		return itemId;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public Set<String> getKeywords() {
+		return keywords;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public String getUrl() {
+		return url;
+	}
 
 	public JSONObject toJSONObject() {
 		JSONObject obj = new JSONObject();
 		obj.put("item_id", itemId);
 		obj.put("name", name);
 		obj.put("address", address);
-		obj.put("keyword", new JSONArray(keywords));
+		obj.put("keywords", new JSONArray(keywords));
 		obj.put("image_url", imageUrl);
 		obj.put("url", url);
 		return obj;

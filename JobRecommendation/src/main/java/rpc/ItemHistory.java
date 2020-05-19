@@ -19,26 +19,23 @@ import entity.Item;
  */
 public class ItemHistory extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ItemHistory() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	public ItemHistory() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String userId = request.getParameter("user_id");
-		
+
 		MySQLConnection connection = new MySQLConnection();
 		Set<Item> items = connection.getFavoriteItems(userId);
 		connection.close();
-		
+
 		JSONArray array = new JSONArray();
 		for (Item item : items) {
 			JSONObject obj = item.toJSONObject();
@@ -49,16 +46,18 @@ public class ItemHistory extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	//use setFavoriteItem() method
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	// use setFavoriteItem() method
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		MySQLConnection connection = new MySQLConnection();
-		JSONObject input = RpcHelper.readJSONOject(request);
+		JSONObject input = RpcHelper.readJSONObject(request);
 		String userId = input.getString("user_id");
 		Item item = RpcHelper.parseFavoriteItem(input.getJSONObject("favorite"));
-		
+
 		connection.setFavoriteItems(userId, item);
 		connection.close();
 		RpcHelper.writeJsonObject(response, new JSONObject().put("result", "SUCCESS"));
@@ -67,16 +66,18 @@ public class ItemHistory extends HttpServlet {
 	/**
 	 * @see HttpServlet#doDelete(HttpServletRequest, HttpServletResponse)
 	 */
-	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		MySQLConnection connection = new MySQLConnection();
-		JSONObject input = RpcHelper.readJSONOject(request);
+		JSONObject input = RpcHelper.readJSONObject(request);
 		String userId = input.getString("user_id");
 		Item item = RpcHelper.parseFavoriteItem(input.getJSONObject("favorite"));
-		
+
 		connection.unsetFavoriteItems(userId, item.getItemId());
 		connection.close();
 		RpcHelper.writeJsonObject(response, new JSONObject().put("result", "SUCCESS"));
+
 	}
 
 }
