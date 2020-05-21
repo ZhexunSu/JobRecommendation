@@ -24,7 +24,7 @@ import entity.Item.ItemBuilder;
 public class GitHubClient {
 	private static final String URL_TEMPLATE = "https://jobs.github.com/positions.json?descroption=%s&lat=%s&long=%s";
 	private static final String DEFAULT_KEYWORD = "developer";
-
+	
 	public JSONArray searchRaw(double lat, double lon, String keyword) {
 		if (keyword == null) {
 			keyword = DEFAULT_KEYWORD;
@@ -60,6 +60,7 @@ public class GitHubClient {
 		return new JSONArray();
 	}
 
+
 	public List<Item> search(double lat, double lon, String keyword) {
 		if (keyword == null) {
 			keyword = DEFAULT_KEYWORD;
@@ -67,25 +68,19 @@ public class GitHubClient {
 		try {
 			keyword = URLEncoder.encode(keyword, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		String url = String.format(URL_TEMPLATE, keyword, lat, lon);
 		CloseableHttpClient httpClient = HttpClients.createDefault();
 		try {
-			// construct a client, execute a http request which contains github API url
-			// and return a http response
 			CloseableHttpResponse response = httpClient.execute(new HttpGet(url));
 			if (response.getStatusLine().getStatusCode() != 200) {
-				return new ArrayList();
+				return new ArrayList<>();
 			}
 			HttpEntity entity = response.getEntity();
 			if (entity == null) {
-				return new ArrayList();
+				return new ArrayList<>();
 			}
-			// getContent return InputStream, the input of constructor of the
-			// InputStreamReader is InputStream
-			// InputStreamReader extends Reader
 			BufferedReader reader = new BufferedReader(new InputStreamReader(entity.getContent()));
 			StringBuilder responseBody = new StringBuilder();
 			String line = null;
@@ -95,14 +90,13 @@ public class GitHubClient {
 			JSONArray array = new JSONArray(responseBody.toString());
 			return getItemList(array);
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return new ArrayList<>();
 	}
+
 
 	private List<Item> getItemList(JSONArray array) {
 		List<Item> itemList = new ArrayList<>();

@@ -35,19 +35,6 @@ public class SearchItem extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		/*
-		double lat = Double.parseDouble(request.getParameter("lat"));
-		double lon = Double.parseDouble(request.getParameter("lon"));
-
-		GitHubClient client = new GitHubClient();
-		List<Item> items = client.search(lat, lon, null);
-		JSONArray array = new JSONArray();
-		for (Item item : items) {
-			array.put(item.toJSONObject());
-		}
-		RpcHelper.writeJsonArray(response, array);
-		*/
-		
 		
 		String userId = request.getParameter("user_id");
 		double lat = Double.parseDouble(request.getParameter("lat"));
